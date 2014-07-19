@@ -1,0 +1,30 @@
+<!doctype>
+<html>
+<head>
+</head>
+<style>
+.item { width: 25%; }
+</style>
+<body>
+<script src="js/masonry.pkgd.min.js"></script>
+<script>
+var container = document.querySelector('#container');
+var msnry = new Masonry( container, {
+  // options
+  columnWidth: 200,
+  itemSelector: '.item'
+});
+</script>
+<div id="container">
+  <div class="item"><img src="img/msnry/1.jpg" alt=""></div>
+  <div class="item"><img src="img/msnry/1.png" alt=""></div>
+  <div class="item"><img src="img/msnry/2.jpg" alt=""></div>
+  <div class="item"><img src="img/msnry/2.png" alt=""></div>
+  <div class="item"><img src="img/msnry/3.jpg" alt=""></div>
+  <div class="item"><img src="img/msnry/4.jpg" alt=""></div>
+  <div class="item"><img src="img/msnry/4.png" alt=""></div>
+  <div class="item"><img src="img/msnry/5.jpg" alt=""></div>
+
+</div>
+</body>
+</html>
