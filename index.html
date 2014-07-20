@@ -9,6 +9,9 @@
 		<link rel="stylesheet" type="text/css" href="css/component.css">
 		<link rel="stylesheet" type="text/css" href="css/msnry.css">
 		<script src="js/modernizr.custom.js"></script>
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/moment.js/1.7.2/moment.min.js"></script>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="js/jquery.simpleWeather.min.js"></script>
 		<link rel="stylesheet" href="style.css">
 		<link rel="stylesheet" href="reset.css">
 		<!--[if IE]>
@@ -17,12 +20,39 @@
 
 	</head>
 	<body class="demo-1">
+	<span class="legende">Vue sur la piscine, au petit matin.</span>
 		<div id="container" class="container intro-effect-push">
 			<header class="header">
 				<div class="bg-img"><img src="img/cover.jpg" alt="Background Image"/></div>
 					<div class="littlebox">
 						<h1>Playa del Carmen &mdash; Juillet 2014</h1>
-						<h2><img src="img/photoset-weather-icn-sun.svg" alt="ensoleillé"> Il est 15h42 et il fait 31°C</h2>
+						<h2><span id="weather"></span><span id="results"></span></h2>
+<script>
+$(document).ready(function() {
+$.simpleWeather({
+location: 'Playa del Carmen, Mexico',
+woeid: '',
+unit: 'c',
+success: function(weather) {
+html = '<i class="icon-'+weather.code+'"></i><span id="middle">Ici, il fait '+weather.temp+'&deg;'+weather.units.temp+' et il est </span>';
+    $("#weather").html(html);
+    },
+    error: function(error) {
+      $("#weather").html('<p>'+error+'</p>');
+    }
+  });
+});
+
+    </script>
+	<!-- MOMENT.JS -->
+    <script>
+        var results = document.getElementById('results')
+        write("moment.utc().add('hours',19).format('HH:mm')")
+        function write(func) {
+            results.innerHTML += eval(func) + '... et vous?';
+        }
+    </script>
+    <!-- ********* -->
 					</div>
 					
 			</header>
