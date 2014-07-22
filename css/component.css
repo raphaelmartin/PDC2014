@@ -1,3 +1,4 @@
+@@ -1,279 +0,0 @@
 /* Header */
 .header {
 	position: relative;
@@ -137,7 +138,7 @@ button.trigger span::before {
 	-moz-osx-font-smoothing: grayscale;
 }
 
-/* Conent */
+/* Content FAIRE GAFFE!!!*/
 .content {
 	margin: 0 auto;
 	padding: 0 0 3em;
@@ -145,7 +146,6 @@ button.trigger span::before {
 
 .content > div:not(.title) {
 	margin: -80px auto 0;
-	max-width: 900px;
 	padding: 0 1.25em;
 }
 
@@ -276,4 +276,4 @@ button.trigger span::before {
 	button.trigger::before {
 		display: none;
 	}
-}
+} 
