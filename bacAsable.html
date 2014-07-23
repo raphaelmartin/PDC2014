@@ -1,8 +1,8 @@
-<!doctype>
+<!doctype html>
 <html>
 <head>
     <title>moment.js example</title>
-    <!-- <link rel="stylesheet" href="css/animate.css"> -->
+<link rel="stylesheet" href="css/animations.css">
 <style>
 * {
   -webkit-box-sizing: border-box;
@@ -13,7 +13,23 @@
 .item{
   width: 450px;
   float: left;
-  margin-bottom: 4px;
+  margin-bottom: 6px;
+}
+
+.item:hover{
+  -webkit-transform: rotate(0deg) scale(0.95);
+-moz-transform: rotate(0deg) scale(0.95);
+-o-transform: rotate(0deg) scale(0.95);
+transform: rotate(0deg) scale(0.95);
+cursor: pointer;
+}
+
+img{
+  -webkit-transition: all 0.2s ease-in-out;
+-moz-transition: all 0.2s ease-in-out;
+-o-transition: all 0.2s ease-in-out;
+-ms-transition: all 0.2s ease-in-out;
+text-decoration: none;
 }
 
 @media only screen and (min-width: 1300px) and (max-width: 1430px) {
@@ -41,8 +57,8 @@ img{
 </head>
 <body>
 
-<div id="container" class="js-masonry"
-  data-masonry-options='{ "itemSelector": ".item", "gutter":4, "isFitWidth": true }'>
+<div class="js-masonry"
+  data-masonry-options='{ "itemSelector": ".item", "gutter":6, "isFitWidth": true }'>
   <div class="content"><img class="item" src="img/msnry/1.jpg"></div>
   <div class="content"><img class="item" src="img/msnry/1.png"></div>
   <div class="content"><img class="item" src="img/msnry/2.jpg"></div>
