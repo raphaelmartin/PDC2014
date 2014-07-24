@@ -101,7 +101,7 @@ section.emoji{
   line-height: 36px;
   color: #444;
   text-align: justify;
-  margin: 20px auto;
+  margin: auto !important;
 }
 
 div img {
