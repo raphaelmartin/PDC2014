@@ -18,9 +18,10 @@
 html,body{
   width: 100%;
   height: 100%;
+  overflow-x: hidden; 
 }
 
-h2{
+header{
   color: #79bde0;
 }
 
@@ -118,7 +119,7 @@ section.emoji{
   line-height: 36px;
   color: #444;
   text-align: justify;
-  margin: 30px auto !important;
+  margin: 30px auto 30px auto !important;
 }
 
 div img {

@@ -1,0 +1,120 @@
+<!doctype html>
+<html>
+<head>
+    <title>Playa del Carmen - Juillet 2014</title>
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="bac.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="reset.css">
+
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="js/moment.min.js"></script>
+    <script src="js/jquery.simpleWeather.min.js"></script>
+    <script src="js/jquery.emoji.js"></script>
+</head>
+<body>
+
+<header>
+<figure class="animated infinite pulse" id="icon"></figure><span id="weather"></span><span id="results"></span>
+</header>
+
+<!-- WEATHER JS -->
+<script>
+$(document).ready(function() {
+$.simpleWeather({
+location: 'Playa del Carmen, Mexico',
+woeid: '',
+unit: 'c',
+success: function(weather) {
+html = '<i class="icon-'+weather.code+'"></i>';
+    $("#icon").html(html);
+    },
+    error: function(error) {
+      $("#icon").html('<p>'+error+'</p>');
+    }
+  });
+});
+</script>
+
+<script>
+$(document).ready(function() {
+$.simpleWeather({
+location: 'Playa del Carmen, Mexico',
+woeid: '',
+unit: 'c',
+success: function(weather) {
+html = 'Ici, il fait '+weather.temp+'&deg;'+weather.units.temp+' et il est ';
+    $("#weather").html(html);
+    },
+    error: function(error) {
+      $("#weather").html('<p>'+error+'</p>');
+    }
+  });
+});
+</script>
+  
+  <!-- MOMENT.JS -->
+    <script>
+        var results = document.getElementById('results')
+        write("moment.utc().add('hours',19).format('HH:mm')")
+        function write(func) {
+            results.innerHTML += '&nbsp;'+eval(func) + '... et vous?';
+        }
+    </script>
+
+  <div class="masonry">
+    <a class="image-link" href="img/1.jpg"><img class="item" src="img/1.jpg"></a>
+    <a class="image-link" href="img/9.jpg"><img class="item" src="img/9.jpg"></a>
+    <a class="image-link" href="img/4.jpg"><img class="item" src="img/4.jpg"></a>
+    <a class="image-link" href="img/2.jpg"><img class="item" src="img/2.jpg"></a>
+    <a class="image-link" href="img/13.jpg"><img class="item" src="img/13.jpg"></a>
+    <a class="image-link" href="img/12.jpg"><img class="item" src="img/12.jpg"></a>
+    <a class="image-link" href="img/3.jpg"><img class="item" src="img/3.jpg"></a>
+  </div>
+  
+  <section class="emoji">
+  <p>
+  Lorem ipsum :+1: dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur
+  </p>
+</section>
+
+<div class="masonry">
+     <a class="image-link" href="img/6.jpg"><img class="item" src="img/6.jpg"></a>
+     <a class="image-link" href="img/7.jpg"><img class="item" src="img/7.jpg"></a>
+     <a class="image-link" href="img/8.jpg"><img class="item" src="img/8.jpg"></a>
+     <a class="image-link" href="img/10.jpg"><img class="item" src="img/10.jpg"></a>
+    <a class="image-link" href="img/5.jpg"><img class="item" src="img/5.jpg"></a>
+     <a class="image-link" href="img/11.jpg"><img class="item" src="img/11.jpg"></a>
+         <a class="image-link" href="img/14.jpg"><img class="item" src="img/14.jpg"></a>
+  </div>
+
+
+<script src="js/jquery.magnific-popup.min.js"></script>
+
+<script type="text/javascript">
+      $(document).ready(function() {
+        $('.masonry').magnificPopup({
+          delegate: 'a',
+          type: 'image',
+          tLoading: 'Loading image #%curr%...',
+          mainClass: 'mfp-img-mobile',
+          gallery: {
+            enabled: true,
+            navigateByImgClick: true,
+            preload: [0,1] // Will preload 0 - before current, and 1 after the current image
+          },
+          image: {
+            tError: '<a href="%url%">The image #%curr%</a> could not be loaded.'
+          }
+        });
+      });
+    </script>
+    <script>
+$(document).ready(function(){
+  $('.emoji').each(function(i, d){
+    $(d).emoji();
+  });
+});
+</script>
+</body>
+</html>
