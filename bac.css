@@ -69,10 +69,6 @@ body {
     margin: 0;
 }
 
-:-moz-any(section){
-  margin: 60px auto 30px auto !important;
-}
-
 p{
   margin: 0;
   padding: 0;
@@ -104,6 +100,10 @@ section.emoji{
   margin: auto !important;
 }
 
+:-moz-any(.masonry){
+  margin: 0 0 60px 0 !important;
+}
+
 div img {
 max-width: 100%;
 height: auto;
@@ -128,7 +128,7 @@ display: block;
     box-sizing: border-box;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
-    margin-bottom: 3px !important;
+    margin-bottom: 3px 0 !important;
     border-radius: 20px;
 }
 
