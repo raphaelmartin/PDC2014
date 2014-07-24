@@ -9,6 +9,27 @@
     font-style: normal;
 }
 
+@font-face {
+  font-family: 'PN-sbold';
+  src: url('fonts/proxima-nova-semibold.eot');
+  src: url('fonts/proxima-nova-semibold.eot?#iefix') format('embedded-opentype'),
+       url('fonts/proxima-nova-semibold.woff') format('woff'),
+       url('fonts/proxima-nova-semibold.ttf')  format('truetype'),
+       url('fonts/PN-sbold.svg#PN-sbold') format('svg');
+}
+
+@font-face {
+    font-family: 'freightsans_probook';
+    src: url('fonts/freigsanprobook-webfont.eot');
+    src: url('fonts/freigsanprobook-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/freigsanprobook-webfont.woff') format('woff'),
+         url('fonts/freigsanprobook-webfont.ttf') format('truetype'),
+         url('fonts/freigsanprobook-webfont.svg#freightsans_probook') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 * {
   -webkit-box-sizing: border-box;
      -moz-box-sizing: border-box;
@@ -18,11 +39,12 @@
 html,body{
   width: 100%;
   height: 100%;
-  overflow-x: hidden; 
+  overflow-x: hidden;
 }
 
 header{
   color: #79bde0;
+  font-family: PN-sbold;
 }
 
 p{
@@ -57,9 +79,70 @@ p{
 i {
   color: #FF5359;
   font-family: weather;
-  font-size: 8em;
+  font-size: 6em;
+  margin: 0;
+  padding: 0;
   font-weight: normal;
   font-style: normal;
+}
+
+h2{
+  font-size: 2.5em;
+}
+
+section.emoji{
+  display: block;
+  font-family: "freightsans_probook";
+  font-size: 2em;
+  max-width: 60vw;
+  line-height: 36px;
+  color: #444;
+  text-align: justify;
+  margin: 30px auto !important;
+}
+
+div img {
+max-width: 100%;
+height: auto;
+display: block;
+}
+
+.lorem{
+  width: 200px;
+}
+
+.masonry {
+    padding: 0;
+    margin: 0;
+    -moz-column-gap: 6px;
+    -webkit-column-gap: 6px;
+    column-gap: 6px;
+}
+
+.item {
+    display: inline-block;
+    width: 100%;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    margin-bottom: 3px !important;
+    border-radius: 20px;
+}
+
+@media only screen and (min-width: 700px) {
+    .masonry {
+        -moz-column-count: 2;
+        -webkit-column-count: 2;
+        column-count: 2;
+    }
+}
+
+@media only screen and (min-width: 900px) {
+    .masonry {
+        -moz-column-count: 3;
+        -webkit-column-count: 3;
+        column-count: 3;
+    }
 }
 
 .icon-0:before { content: ":"; }
@@ -110,57 +193,3 @@ i {
 .icon-45:before { content: "S"; }
 .icon-46:before { content: "U"; }
 .icon-47:before { content: "S"; }
-
-section.emoji{
-  display: block;
-  font-family: "FreightSans Pro";
-  font-size: 2em;
-  max-width: 60vw;
-  line-height: 36px;
-  color: #444;
-  text-align: justify;
-  margin: 30px auto 30px auto !important;
-}
-
-div img {
-max-width: 100%;
-height: auto;
-display: block;
-}
-
-.lorem{
-  width: 200px;
-}
-
-.masonry {
-    padding: 0;
-    margin: 0;
-    -moz-column-gap: 6px;
-    -webkit-column-gap: 6px;
-    column-gap: 6px;
-}
-
-.item {
-    display: inline-block;
-    width: 100%;
-    box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    margin-bottom: 3px !important;
-}
-
-@media only screen and (min-width: 700px) {
-    .masonry {
-        -moz-column-count: 2;
-        -webkit-column-count: 2;
-        column-count: 2;
-    }
-}
-
-@media only screen and (min-width: 900px) {
-    .masonry {
-        -moz-column-count: 3;
-        -webkit-column-count: 3;
-        column-count: 3;
-    }
-}
