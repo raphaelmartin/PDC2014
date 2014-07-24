@@ -87,7 +87,7 @@ html = 'Ici, il fait '+weather.temp+'&deg;'+weather.units.temp+' et il est';
         var results = document.getElementById('results')
         write("moment.utc().add('hours',19).format('HH:mm')")
         function write(func) {
-            results.innerHTML += '&nbsp;'+eval(func) + '... et vous?';
+            results.innerHTML += eval(func) + '... et vous?';
         }
     </script>
 <script src="js/jquery.magnific-popup.min.js"></script>
