@@ -47,18 +47,15 @@ html,body{
 header{
   color: #79bde0;
   font-family: PN-sbold;
+  height:30%;
+  text-align: center;
+  background-color: #f6e579;
+  margin-bottom: 4% !important;
 }
 
 p{
   position: relative;
   bottom:30px;
-}
-
-header{
-  height:30%;
-  text-align: center;
-  background-color: #f6e579;
-  margin-bottom: 4% !important;
 }
 
 figure{
@@ -148,6 +145,16 @@ display: block;
         -moz-column-count: 3;
         -webkit-column-count: 3;
         column-count: 3;
+    }
+}
+
+@media only screen and (min-width: 1025px) {
+    i{
+      font-size: 4em;
+    }
+
+    h2{
+      font-size: 1.5em;
     }
 }
 
