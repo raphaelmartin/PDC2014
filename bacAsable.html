@@ -8,8 +8,8 @@
     <link rel="stylesheet" href="reset.css">
 
     <script src="http://code.jquery.com/jquery-latest.min.js"></script>
-    <script src="js/moment.min.js"></script>
     <script src="js/jquery.simpleWeather.min.js"></script>
+    <script src="js/moment.min.js"></script>
     <script src="js/jquery.emoji.js"></script>
 </head>
 <body>
@@ -20,7 +20,6 @@
 
 <!-- WEATHER JS -->
 <script>
-$(document).ready(function() {
 $.simpleWeather({
 location: 'Playa del Carmen, Mexico',
 woeid: '',
@@ -33,11 +32,9 @@ html = '<i class="icon-'+weather.code+'"></i>';
       $("#icon").html('<p>'+error+'</p>');
     }
   });
-});
 </script>
 
 <script>
-$(document).ready(function() {
 $.simpleWeather({
 location: 'Playa del Carmen, Mexico',
 woeid: '',
@@ -50,7 +47,6 @@ html = 'Ici, il fait '+weather.temp+'&deg;'+weather.units.temp+' et il est ';
       $("#weather").html('<p>'+error+'</p>');
     }
   });
-});
 </script>
   
   <!-- MOMENT.JS -->
