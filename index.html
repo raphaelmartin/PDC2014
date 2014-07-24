@@ -18,6 +18,38 @@
 <h1><figure class="animated infinite pulse" id="icon"></figure><p id="weather"></p><p id="results"></p></h2>
 </header>
 
+  <div class="masonry g1">
+    <a class="image-link" href="img/1.jpg"><img class="item" src="img/1.jpg"></a>
+    <a class="image-link" href="img/9.jpg"><img class="item" src="img/9.jpg"></a>
+    <a class="image-link" href="img/4.jpg"><img class="item" src="img/4.jpg"></a>
+    <a class="image-link" href="img/2.jpg"><img class="item" src="img/2.jpg"></a>
+    <a class="image-link" href="img/12.jpg"><img class="item" src="img/12.jpg"></a>
+    <a class="image-link" href="img/3.jpg"><img class="item" src="img/3.jpg"></a>
+  <a class="image-link" href="img/13.jpg"><img class="item" src="img/13.jpg"></a>
+  </div>
+  
+<section class="emoji">
+  <p>
+  Entre crêpes maison et pizza, pas sûr qu'on fasse vraiment honneur aux spécialités mexicaines, mais en tout cas on ne meurt pas de faim! :sunglasses: Après manger, on ne peut s'empêcher de plonger dans la piscine ou de faire une petite sieste sur le canapé. Comment ça on ne fait rien? :hushed:
+  </p>
+</section>
+
+<div class="masonry g2">
+     <a class="image-link" href="img/6.jpg"><img class="item" src="img/6.jpg"></a>
+     <a class="image-link" href="img/7.jpg"><img class="item" src="img/7.jpg"></a>
+     <a class="image-link" href="img/8.jpg"><img class="item" src="img/8.jpg"></a>
+     <a class="image-link" href="img/10.jpg"><img class="item" src="img/10.jpg"></a>
+    <a class="image-link" href="img/5.jpg"><img class="item" src="img/5.jpg"></a>
+     <a class="image-link" href="img/11.jpg"><img class="item" src="img/11.jpg"></a>
+         <a class="image-link" href="img/14.jpg"><img class="item" src="img/14.jpg"></a>
+  </div>
+
+  <section class="emoji">
+  <p>
+  A Tulum. :rainbow: On a faillit ne jamais y être à cause d'un petit problème avec la voiture. Plus de peur que de mal, on a pu profiter des décors somptueux de cette petite ville : une très belle plage, un beau soleil, et quelques coups de soleil. Une bière se cache dans ces photos, saurez-vous la retrouver? :beer:
+  </p>
+</section>
+
 <!-- WEATHER JS -->
 <script>
 $.simpleWeather({
@@ -57,42 +89,7 @@ html = 'Ici, il fait '+weather.temp+'&deg;'+weather.units.temp+' et il est';
             results.innerHTML += '&nbsp;'+eval(func) + '... et vous?';
         }
     </script>
-
-  <div class="masonry g1">
-    <a class="image-link" href="img/1.jpg"><img class="item" src="img/1.jpg"></a>
-    <a class="image-link" href="img/9.jpg"><img class="item" src="img/9.jpg"></a>
-    <a class="image-link" href="img/4.jpg"><img class="item" src="img/4.jpg"></a>
-    <a class="image-link" href="img/2.jpg"><img class="item" src="img/2.jpg"></a>
-    <a class="image-link" href="img/12.jpg"><img class="item" src="img/12.jpg"></a>
-    <a class="image-link" href="img/3.jpg"><img class="item" src="img/3.jpg"></a>
-  <a class="image-link" href="img/13.jpg"><img class="item" src="img/13.jpg"></a>
-  </div>
-  
-<section class="emoji">
-  <p>
-  Entre crêpes maison et pizza, pas sûr qu'on fasse vraiment honneur aux spécialités mexicaines, mais en tout cas on ne meurt pas de faim! :sunglasses: Après manger, on ne peut s'empêcher de plonger dans la piscine ou de faire une petite sieste sur le canapé. Comment ça on ne fait rien? :hushed:
-  </p>
-</section>
-
-<div class="masonry g2">
-     <a class="image-link" href="img/6.jpg"><img class="item" src="img/6.jpg"></a>
-     <a class="image-link" href="img/7.jpg"><img class="item" src="img/7.jpg"></a>
-     <a class="image-link" href="img/8.jpg"><img class="item" src="img/8.jpg"></a>
-     <a class="image-link" href="img/10.jpg"><img class="item" src="img/10.jpg"></a>
-    <a class="image-link" href="img/5.jpg"><img class="item" src="img/5.jpg"></a>
-     <a class="image-link" href="img/11.jpg"><img class="item" src="img/11.jpg"></a>
-         <a class="image-link" href="img/14.jpg"><img class="item" src="img/14.jpg"></a>
-  </div>
-
-  <section class="emoji">
-  <p>
-  A Tulum. :rainbow: On a faillit ne jamais y être à cause d'un petit problème avec la voiture. Plus de peur que de mal, on a pu profiter des décors somptueux de cette petite ville : une très belle plage, un beau soleil, et quelques coups de soleil. Une bière se cache dans ces photos, saurez-vous la retrouver? :beer:
-  </p>
-</section>
-
-
 <script src="js/jquery.magnific-popup.min.js"></script>
-
 <script>
       $(document).ready(function() {
         $('.g1').magnificPopup({
