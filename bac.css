@@ -55,11 +55,6 @@ header{
   margin-bottom: 4% !important;
 }
 
-p{
-  position: relative;
-  bottom:30px;
-}
-
 figure{
   margin: 0;
   padding: 0;
@@ -74,7 +69,6 @@ body {
 p{
   margin: 0;
   padding: 0;
-  display: inline-block;
 }
 
 i {
@@ -99,18 +93,19 @@ section.emoji{
   line-height: 36px;
   color: #444;
   text-align: justify;
-  margin: auto !important;
-  overflow: visible;
+  margin:30px auto;
+  padding: 0;
 }
 
-:-moz-any(.masonry){
-  margin: 0 0 60px 0 !important;
+header p{
+  position: relative;
+  bottom:30px;
+  display: inline-block;
 }
 
 div img {
 max-width: 100%;
 height: auto;
-display: block;
 }
 
 .lorem{
@@ -123,14 +118,12 @@ display: block;
     -moz-column-gap: 6px;
     -webkit-column-gap: 6px;
     column-gap: 6px;
+    line-height: 0;
 }
 
 .item {
     display: inline-block;
     width: 100%;
-    box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
     margin-bottom: 3px 0 !important;
     border-radius: 20px;
 }

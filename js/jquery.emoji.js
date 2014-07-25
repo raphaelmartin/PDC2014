@@ -14,6 +14,6 @@
     var url = 'https://github.com/SCRAPTURE/jquery-emoji/raw/master/images/emojis';
     var extension = '.png';
     var src = url + '/' + key + extension;
-    return '<img class="emoji" width="20" height="20" align="absmiddle" src="' + src + '" alt="' + key + '" title="' + key + '" />';
+    return '<img class="emoji" style="vertical-align:top;" width="33" height="33" align="absmiddle" src="' + src + '" alt="' + key + '" title="' + key + '" />';
   };
 })(jQuery);
