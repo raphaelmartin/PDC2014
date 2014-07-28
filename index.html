@@ -20,6 +20,68 @@
 </header>
 
 <section class="emoji">
+<p>Les rues de Playa ne dorment jamais. Surtout la Quinta, l'avenue principale et la plus commerçante que Mumu a adoré arpenté soir et matin pour nous ramener ces belles photos. :camera:</p> 
+</section>
+
+<div class="masonry g3">
+  <a class='image-link' href='img/15.jpg'><img class='item' src='img/15.jpg'></a>
+  <a class='image-link' href='img/16.jpg'><img class='item' src='img/16.jpg'></a>
+  <a class='image-link' href='img/17.jpg'><img class='item' src='img/17.jpg'></a>
+  <a class='image-link' href='img/18.jpg'><img class='item' src='img/18.jpg'></a>
+  <a class='image-link' href='img/20.jpg'><img class='item' src='img/20.jpg'></a>
+  <a class='image-link' href='img/21.jpg'><img class='item' src='img/21.jpg'></a>
+  <a class='image-link' href='img/22.jpg'><img class='item' src='img/22.jpg'></a>
+  <a class='image-link' href='img/24.jpg'><img class='item' src='img/24.jpg'></a>
+  <a class='image-link' href='img/25.jpg'><img class='item' src='img/25.jpg'></a>
+  <a class='image-link' href='img/26.jpg'><img class='item' src='img/26.jpg'></a>
+  <a class='image-link' href='img/27.jpg'><img class='item' src='img/27.jpg'></a>
+  <a class='image-link' href='img/28.jpg'><img class='item' src='img/28.jpg'></a>
+  <a class='image-link' href='img/29.jpg'><img class='item' src='img/29.jpg'></a>
+  <a class='image-link' href='img/31.jpg'><img class='item' src='img/31.jpg'></a>
+  <a class='image-link' href='img/32.jpg'><img class='item' src='img/32.jpg'></a>
+  <a class='image-link' href='img/33.jpg'><img class='item' src='img/33.jpg'></a>
+  <a class='image-link' href='img/34.jpg'><img class='item' src='img/34.jpg'></a>
+  <a class='image-link' href='img/35.jpg'><img class='item' src='img/35.jpg'></a>
+  <a class='image-link' href='img/37.jpg'><img class='item' src='img/37.jpg'></a>
+</div>
+
+<section class="emoji">
+<p>La plage, le soleil, les palmiers, le sable, toussa toussa :sun_with_face: :dancers: </p> 
+</section>
+
+<div class="masonry g4">
+  <a class='image-link' href='img/19.jpg'><img class='item' src='img/19.jpg'></a>
+  <a class='image-link' href='img/30.jpg'><img class='item' src='img/30.jpg'></a>
+  <a class='image-link' href='img/36.jpg'><img class='item' src='img/36.jpg'></a>
+  <a class='image-link' href='img/39.jpg'><img class='item' src='img/39.jpg'></a>
+  <a class='image-link' href='img/40.jpg'><img class='item' src='img/40.jpg'></a>
+  <a class='image-link' href='img/41.jpg'><img class='item' src='img/41.jpg'></a>
+  <a class='image-link' href='img/42.jpg'><img class='item' src='img/42.jpg'></a>
+  <a class='image-link' href='img/45.jpg'><img class='item' src='img/45.jpg'></a>
+  <a class='image-link' href='img/46.jpg'><img class='item' src='img/46.jpg'></a>
+  <a class='image-link' href='img/47.jpg'><img class='item' src='img/47.jpg'></a>
+  <a class='image-link' href='img/48.jpg'><img class='item' src='img/48.jpg'></a>
+  <a class='image-link' href='img/49.jpg'><img class='item' src='img/49.jpg'></a>
+  <a class='image-link' href='img/50.jpg'><img class='item' src='img/50.jpg'></a>
+  <a class='image-link' href='img/51.jpg'><img class='item' src='img/51.jpg'></a>
+  <a class='image-link' href='img/52.jpg'><img class='item' src='img/52.jpg'></a>
+  <a class='image-link' href='img/53.jpg'><img class='item' src='img/53.jpg'></a>
+  <a class='image-link' href='img/54.jpg'><img class='item' src='img/54.jpg'></a>
+  <a class='image-link' href='img/55.jpg'><img class='item' src='img/55.jpg'></a>
+</div>
+
+<section class="emoji">
+<p>Quelques photos en vrac... :wink: </p> 
+</section>
+
+<div class="masonry g5">
+<a class='image-link' href='img/23.jpg'><img class='item' src='img/23.jpg'></a>
+<a class='image-link' href='img/38.jpg'><img class='item' src='img/38.jpg'></a>
+<a class='image-link' href='img/43.jpg'><img class='item' src='img/43.jpg'></a>
+<a class='image-link' href='img/44.jpg'><img class='item' src='img/44.jpg'></a>
+</div>
+
+<section class="emoji">
 <p>Demain, départ pour Cancun! La capitale de notre région du Quintana Roo. On va en profiter pour faire les boutiques et goûter au MacDo mexicain. Pleins de photos seront mises pour demain soir. Bisous à tous! :kissing_closed_eyes: </p> 
 </section>
 
@@ -116,6 +178,60 @@ html = 'Ici, il fait '+weather.temp+'&deg;'+weather.units.temp+' et il est';
     <script>
       $(document).ready(function() {
         $('.g2').magnificPopup({
+          delegate: 'a',
+          type: 'image',
+          tLoading: 'Loading image #%curr%...',
+          mainClass: 'mfp-img-mobile',
+          gallery: {
+            enabled: true,
+            navigateByImgClick: true,
+            preload:0
+          },
+          image: {
+            tError: '<a href="%url%">The image #%curr%</a> could not be loaded.'
+          }
+        });
+      });
+    </script>
+    <script>
+      $(document).ready(function() {
+        $('.g3').magnificPopup({
+          delegate: 'a',
+          type: 'image',
+          tLoading: 'Loading image #%curr%...',
+          mainClass: 'mfp-img-mobile',
+          gallery: {
+            enabled: true,
+            navigateByImgClick: true,
+            preload:0
+          },
+          image: {
+            tError: '<a href="%url%">The image #%curr%</a> could not be loaded.'
+          }
+        });
+      });
+    </script>
+    <script>
+      $(document).ready(function() {
+        $('.g4').magnificPopup({
+          delegate: 'a',
+          type: 'image',
+          tLoading: 'Loading image #%curr%...',
+          mainClass: 'mfp-img-mobile',
+          gallery: {
+            enabled: true,
+            navigateByImgClick: true,
+            preload:0
+          },
+          image: {
+            tError: '<a href="%url%">The image #%curr%</a> could not be loaded.'
+          }
+        });
+      });
+    </script>
+    <script>
+      $(document).ready(function() {
+        $('.g5').magnificPopup({
           delegate: 'a',
           type: 'image',
           tLoading: 'Loading image #%curr%...',
